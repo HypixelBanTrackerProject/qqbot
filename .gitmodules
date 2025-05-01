@@ -1,0 +1,3 @@
+[submodule "webapi"]
+	path = webapi
+	url = https://github.com/HypixelBanTrackerProject/webapi.git
