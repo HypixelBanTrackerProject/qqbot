@@ -1,7 +1,7 @@
 import subprocess
 from alicebot import Bot
 
-LAGRANGE = './lagrange/lagrange.exe'
+LAGRANGE = './lagrange/lagrange'
 WEBAPI = 'fastapi run'
 
 subprocess.Popen(LAGRANGE,cwd='lagrange/config')
