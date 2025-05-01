@@ -1,5 +1,2 @@
-apscheduler
 requests
-FastAPI
-fastapi-cli
 alicebot[cqhttp]
