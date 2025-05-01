@@ -18,7 +18,7 @@ COPY requirements.txt requirements.txt
 # 安装依赖
 RUN pip install --no-cache-dir -r requirements.txt && \
     pip install --no-cache-dir -r webapi/requirements.txt && \
-    chmod +x lagrange/lagrange
+    chmod +x /app/lagrange/lagrange
 
 COPY . .
 
