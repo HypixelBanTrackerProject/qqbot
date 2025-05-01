@@ -9,18 +9,11 @@ RUN apt-get update && \
 # 设置工作目录
 WORKDIR /app
 
-# 复制 lagrange 文件夹
-COPY lagrange lagrange
-
-COPY webapi/requirements.txt webapi/requirements.txt
-COPY requirements.txt requirements.txt
+COPY . .
 
 # 安装依赖
 RUN pip install --no-cache-dir -r requirements.txt && \
-    pip install --no-cache-dir -r webapi/requirements.txt && \
-    chmod +x lagrange/lagrange
-
-COPY . .
+    pip install --no-cache-dir -r webapi/requirements.txt
 
 VOLUME [ "/app/lagrange/config" ]
 
